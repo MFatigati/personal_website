@@ -140,10 +140,6 @@ p {
   margin-bottom: 15px;
 }
 
-a.mashr {
- color: #ef431b;
-}
-
 a {
   color: #000;
   text-decoration: none;
@@ -432,29 +428,6 @@ footer {
     width: 50px;
   }
 
-  #mashr-info-container,
-  #mashr-video-container {
-    -ms-align-items: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 50px;
-  }
-
-  #mashr-info-container > div:first-of-type,
-  #mashr-video-container > div:first-of-type {
-    margin-right: 0;
-  }
-
-  #mashr-info-container > div:last-of-type,
-  #mashr-video-container > div:last-of-type {
-    margin-left: 0;
-  }
-
-  #mashr-info-container > div,
-  #mashr-video-container > div {
-    width: 90%;
-  }
-
   #deploy-command-gif,
   div > iframe {
     margin-bottom: 50px;
@@ -471,20 +444,6 @@ footer {
 
 
 @media(max-width: 690px) {
-  #mashr-logo {
-    margin-bottom: 25px;
-    width: 75px;
-  }
-
-  #mashr-title-container {
-    -ms-align-items: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  #mashr-logo {
-    margin-right: 0;
-  }
 }
 
 @media(max-width: 570px) {
@@ -505,27 +464,12 @@ footer {
     padding: 65px 15%;
   }
 
-  #mashr-info-container {
-    margin-top: 25px;
-  }
-
-  #mashr-repo-btn {
-    align-self: center;
-  }
-
   #projects > ul {
     width: 100%;
   }
 }
 
 @media(max-width: 465px) {
-  #mashr-info-container > div {
-    width: 100%;
-  }
-
-  #mashr-logo {
-    width: 60px;
-  }
 
   #contact li {
     margin: 15%;
@@ -552,10 +496,6 @@ footer {
 
   h3 {
     font-size: 1.2rem;
-  }
-
-  #mashr-repo-btn {
-    width: 180px;
   }
 
   #projects > ul {
