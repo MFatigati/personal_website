@@ -496,10 +496,18 @@ footer {
 
 }
 
-/* 
+
 @media(max-width: 690px) {
+  #intro {
+    float: left;
+  }
+
+  #projects {
+    float: left;
+  }
 }
 
+/* 
 @media(max-width: 570px) {
   #intro > p {
     width: 100%;
