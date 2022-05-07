@@ -268,6 +268,10 @@ footer {
   text-decoration: underline;
 }
 
+.p-wide {
+  max-width: 500px;
+}
+
 /* ---------------------------------
 
                #sentinel
