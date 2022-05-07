@@ -304,6 +304,11 @@ footer {
   margin-right: 2.5%;
 }
 
+.sentinel-link {
+  color:#33c5ff;
+  text-decoration: underline;
+}
+
 #sentinel-info-img {
   /* background-color: #282828;
   border: solid 10px #282828; */
@@ -351,6 +356,15 @@ div > iframe {
   color: #E07F00;
 }
 
+/* ---------------------------------
+
+              contact
+
+------------------------------------ */
+
+#projects img {
+  border-radius: 5px;
+}
 
 /* ---------------------------------
 
