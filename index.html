@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en-US" prefix="og: http://opg.me/ns#">
 
@@ -11,10 +10,6 @@
   <meta name="author" content="Michael Fatigati" />
   <!-- OG TAGS -->
   <meta name="title" property="og:title" content="Michael Fatigati" />
-  <!-- <meta name="description" property="og:description" content="I'm a full stack software engineer based in Austin, Texas, and co-creator of Sentinel" />
-  <meta name="type" property="og:type" content="website" />
-  <meta name="url" property="og:url" content="https://www.michaelfatigati.dev" />
-  <meta name="image" property="og:image" content="public/favicons/android-chrome-192x192.png" />  -->
   <meta property="og:url" content="https://www.michaelfatigati.dev/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Michael Fatigati">
@@ -37,83 +32,99 @@
 </head>
 <body>
   <div class="logo-links">
-    <a href="https://github.com/mfatigati" target="_blank">
+    <a href="https://github.com/MFatigati" target="_blank">
       <img class="icon" src="public/assets/icons/git_hub.svg" alt="github logo" id="github-logo">
     </a>
     <a href="public/assets/Michael_Fatigati_Resume.pdf" target="_blank">
       <img class="icon" src="public/assets/icons/resume.svg" alt="link to Michael Fatigati resume" id="resume-logo">
     </a>
-    <a href="https://www.linkedin.com/in/michael-fatigati/" target="_blank">
+    <a href="https://www.linkedin.com/in/michael-fatigati" target="_blank">
       <img class="icon" src="public/assets/icons/linked_in.svg" alt="link to Michael Fatigati LinkedIn" id="linkedin-logo">
     </a>
   </div>
   <main>
-    <section id="intro" class="flexbox horz-center">
+    <section id="intro-wide" class="flexbox vert-center">
       <div>
         <img id="avatar" src="public/assets/images/mf_headshot_oval.png" alt="photo of Michael Fatigati">
         <h3 id="name">Michael Fatigati</h3>
       </div>
-      <div id="bio">
+      <div>
         <p>I'm a full-stack software engineer based in Austin, Texas. Recently I built <a href="#sentinel">Sentinel</a>, an open-source platform as a service (PaaS), with built-in support for upgrading applications via canary deployments.</p>
         <p>I have multiple years of experience in the JavaScript/Node.js and Go ecosystems, and I'm comfortable working with AWS infrastructure, Docker swarm mode, PostgreSQL, Prometheus, and more.</p>
         <p>I also have a PhD in Classical Arabic philosophy, and my passion for investigating questions and mastering languages has found a happy home in software.</p>
       </div>
     </section>
-    <!-- sentinel -->
-    <section id="sentinel">
-      <a href="https://sentinel-paas.github.io" target="blank"><h1>Sentinel</h1></a>
-      <div>
-        <p><a href="https://sentinel-paas.github.io" target="blank">Sentinel</a> is an open source, cloud-agnostic, self-hosted platform as a service (PaaS) that can easily deploy multiple database-backed web applications, with built in support for upgrading applications via <span>canary deployments.</span></p>
-        <img id="sentinel-logo" src="public/assets/images/Sentinel_graphic_color_smaller.png" alt="sentinel-logo">
+    <section id="intro-narrow" class="flexbox horz-center">
+      <img id="avatar" src="public/assets/images/mf_headshot_oval.png" alt="photo of Michael Fatigati">
+      <h3 id="name">Michael Fatigati</h3>
+      <p>I'm a full-stack software engineer based in Austin, Texas. Recently I built <a href="#sentinel">Sentinel</a>, an open-source platform as a service (PaaS), with built-in support for upgrading applications via canary deployments.</p>
+      <p>I have multiple years of experience in the JavaScript/Node.js and Go ecosystems, and I'm comfortable working with AWS infrastructure, Docker swarm mode, PostgreSQL, Prometheus, and more.</p>
+      <p>I also have a PhD in Classical Arabic philosophy, and my passion for investigating questions and mastering languages has found a happy home in software.</p>
+    </section>
+    <!-- SENTINEL -->
+    <section id="sentinel" class="flexbox horz-center">
+      <div id="sentinel-info-container" class="flexbox">
+        <div class="flexbox horz-center">
+          <p id="sentinel-header">Sentinel</p>
+        </div>
+        <div id="canary-container">
+          <img id="sentinel-info-img-1" src="public/assets/images/Sentinel_graphic_color_smaller.png" alt="sentinel logo" />
+        </div>
       </div>
-      <div>
-        <img class="sentinel-demo" src="public/assets/images/cli.png" alt="sentinel cli demo">
+      <div id="sentinel-info-container" class="flexbox">
         <div>
+          <img id="sentinel-info-img" src="public/assets/images/cli.png" alt="sentinel cli" />
+        </div>
+        <div class="flexbox horz-center">
+          <p><a href="https://sentinel-paas.github.io" target="blank">Sentinel</a> is an open source, cloud-agnostic, self-hosted platform as a service (PaaS) that can easily deploy multiple database-backed web applications, with built in support for upgrading applications via <span>canary deployments.</span></p>
           <p>Sentinel provides a straightforward <span>CLI</span>, and uses <span>Terraform and Ansible</span> to provision and configure cloud infrastructure, <span>Docker in swarm mode</span> for container orchestration, and <span>Traefik</span> for canary traffic-splitting and sticky-sessions.</p>
-          <!-- <p>Sentinel provides an easy-to-use CLI, and uses:</p>
-          <ul>
-            <li>Terraform and Ansible to provision and configure cloud infrastructure</li>
-            <li>Docker in Swarm Mode for container orchestration</li>
-            <li>Traefik for canary traffic-splitting and sticky-sessions</li>
-          </ul> -->
         </div>
       </div>
-      <div>
-        <div>
+      <div id="sentinel-info-container" class="flexbox">
+        <div class="flexbox horz-center">
           <p>Every application deployed via Sentinel is automatically integrated with a monitoring stack consisting of <span>Node-Exporter, Prometheus, and Grafana.</span></p>
+          <a id="sentinel-repo-btn-1" class="btn" target="_blank" href="https://sentinel-paas.github.io/">READ THE SENTINEL CASE STUDY</a>
         </div>
-        <img class="sentinel-demo" src="public/assets/images/monitoring_small2.gif" alt="sentinel monitoring demo">
+        <div>
+          <img id="sentinel-info-img" src="public/assets/images/monitoring_small2.gif" alt="A gif showing sentinel's monitoring architecture" />
+        </div>
       </div>
-      <a id="sentinel-repo-btn" class="btn" target="_blank" href="https://sentinel-paas.github.io">READ THE SENTINEL CASE STUDY</a>
+      <div id="sentinel-info-container" class="flexbox">
+        <div class="flexbox horz-center">
+          <a id="sentinel-repo-btn-2" class="btn" target="_blank" href="https://sentinel-paas.github.io/">READ THE SENTINEL CASE STUDY</a>
+        </div>
+      </div>
     </section>
-    <!-- other projects -->
-    <section id="projects">
-      <h2>Other projects</h2>
-      <ul>
-        <li>
-          <img src="public/assets/images/small_projects_reference.png" alt="Screenshot of reference application" />
-          <h4>Reference Manager</h4>
-          <p>Organize references for research papers and generate bibliographies to text files (Go's net/http and html/template libraries, PostgresSQL)</p>
-        </li>
-        <li>
-          <img src="public/assets/images/small_projects_hookie.png" alt="Screenshot of hookie application" />
-          <h4>Hookie</h4>
-          <p>Develop, receive & debug webhooks (TypeScript, Pug, PostgresSQL, MongoDB)</p>
-        </li>
-        <li>
-          <img src="public/assets/images/small_projects_mello.png" alt="Screenshot of mello application" />
-          <h4>Mellow</h4>
-          <p>A collaboration and project organization app based on Trello (Express, React/Redux, MongoDB)</p>
-        </li>
-        <li>
-          <img src="public/assets/images/small_project_todos.png" alt="Screenshot of todos application" />
-          <h4>Task Manager</h4>
-          <p>Allows authenticated users to manage their todo lists (Express, JQuery, Handlebars, SQLite)</p>
-        </li>
-      </ul>
-    </section>
+    <section id="projects" class="flexbox horz-center">
+        <h2>Other projects</h2>
+        <ul class="flexbox vert-center">
+          <li>
+            <img src="public/assets/images/small_projects_reference_2.png" alt="Screenshot of airline routes viewer application" />
+            <h4>Reference Manager</h4>
+            <p>Organize references for research papers and generate bibliographies to text files (Go's net/http and html/template libraries, PostgresSQL)</p>
+          </li>
+          <li>
+            <img src="public/assets/images/small_projects_hookie_2.png" alt="Screenshot of postit application" />
+            <h4>Hookie</h4>
+            <p>Develop, receive & debug webhooks (TypeScript, Pug, PostgresSQL, MongoDB)</p>
+          </li>
+        </ul>
+        <ul class="flexbox vert-center">
+          <li>
+            <img src="public/assets/images/small_projects_mello.png" alt="Screenshot of airline routes viewer application" />
+            <h4>Mellow</h4>
+            <p>A collaboration and project organization app based on Trello (Express, React/Redux, MongoDB)</p>
+          </li>
+          <li>
+            <img src="public/assets/images/small_project_todos.png" alt="Screenshot of postit application" />
+            <h4>Task Manager</h4>
+            <p>Allows authenticated users to manage their todo lists (Express, JQuery, Handlebars, SQLite)</p>
+          </li>
+        </ul>
+      </section>
     <section id="contact" class="flexbox horz-center">
-      <h3>Connect with me</h3>
+      <h3>connect with me</h3>
+      <h4><a href="mailto:fatigati.michael@gmail.com">fatigati.michael@gmail.com</a></h4>
       <ul class="flexbox vert-center">
         <li>
           <a href="public/assets/Michael_Fatigati_Resume.pdf" target="_blank">
@@ -126,12 +137,12 @@
           </a>
         </li> -->
         <li>
-          <a href="https://github.com/mfatigati" target="_blank">
+          <a href="https://github.com/MFatigati" target="_blank">
             <img class="icon" src="public/assets/icons/git_hub.svg" alt="link to Michael Fatigati GitHub">
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/michael-fatigati/" target="_blank">
+          <a href="https://www.linkedin.com/in/michael-fatigati" target="_blank">
             <img class="icon" src="public/assets/icons/linked_in.svg" alt="link to Michael Fatigati LinkedIn">
           </a>
         </li>

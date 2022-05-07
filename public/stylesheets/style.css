@@ -1,8 +1,6 @@
 @import url('whitespace-reset.css');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:ital,wght@0,400;0,900;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Germania+One:wght@200;300;400;600;700;800;900&family=Lato:ital,wght@0,400;0,900;1,400&display=swap');
-
 
 /* ---------------------------------
 
@@ -91,13 +89,30 @@ header {
   height: 40px;
 }
 
-#intro > h4 > img {
+#intro-wide > h4 > img {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+#intro-narrow > h4 > img {
   display: inline-block;
   padding-right: 5px;
 }
 
 #contact h3 {
   color: #000000;
+}
+
+
+#projects > ul {
+  -ms-align-items: flex-start;
+  align-items: flex-start;
+  margin-top: 75px;
+}
+
+#projects img {
+  box-shadow: 0 0 25px #d2d7d3;
+  width: 100%;
 }
 
 h4 {
@@ -135,11 +150,15 @@ a {
 
 li {
   margin: 0 2%;
-  width: fit-content;
+  width: 40%;
 }
 
 section {
-  padding: 100px 10%;
+  padding-top: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 100px;
+  /* padding: 100px 10%; */
 }
 
 hr {
@@ -214,33 +233,39 @@ footer {
 
 ------------------------------------ */
 
-#intro {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-column-gap: 15px;
-}
-
 #avatar {
+  display: block;
   max-width: 250px;
-  min-width: 230px;
+  min-width: 225px;
   object-fit: contain;
   width: 25%;
 }
 
-#intro > div > p {
+#intro-narrow {
+ display: none; 
+}
+
+#intro-narrow > p {
   text-align: center;
   width: 550px;
-  font-size: 1rem;
-  text-align: left;
 }
 
-#intro > div > p > a {
+#intro-wide {
+  margin-top: 50px;
+}
+
+#intro-wide > div {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#intro-wide h3 {
+  margin-left: 15px;
+}
+
+#intro-wide a, #intro-narrow a {
   color:#33c5ff;
   text-decoration: underline;
-}
-
-#name {
-  margin-left: 25px;
 }
 
 /* ---------------------------------
@@ -249,104 +274,79 @@ footer {
 
 ------------------------------------ */
 
+#sentinel-header {
+  font-family: "Germania One";
+  font-size: 100px;
+  margin-top: auto;
+}
+
 #sentinel {
   background-color: #ecf0f1;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding-top: 50px;
-  width: fit-content;
 }
 
-#sentinel > div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 40px;
-  position: relative;
+#sentinel h2 {
+  display: inline-block;
 }
 
-#sentinel > a > h1 {
-  font-family: "Germania One";
-  color: black;
-  font-size: 5rem;
+#sentinel-info-container {
+  margin-top: 75px;
 }
 
-#sentinel ul {
-  list-style-type: disc;
-}
-
-#sentinel li {
-  font-family: Roboto;
-  width: 80%;
-  margin-left: 30px;
-}
-
-#sentinel-logo {
-  width: 35%;
-}
-
-.sentinel-demo {
+#sentinel-info-container > div {
   width: 50%;
-  min-width: 616px;
-  border-radius: 2%;
 }
 
-#sentinel-repo-btn {
+#sentinel-info-container > div:first-of-type {
+  margin-right: 2.5%;
+}
+
+#sentinel-info-img {
+  /* background-color: #282828;
+  border: solid 10px #282828; */
+  border-radius: 10px;
+  height: auto;
+  max-width: 100%;
+  width: auto;
+}
+
+#sentinel-info-img-1 {
+  /* background-color: #282828;
+  border: solid 10px #282828;
+  border-radius: 10px; */
+  height: auto;
+  max-width: 250px;
+}
+
+div > iframe {
+  max-width: 100%;
+}
+
+#sentinel-info-container > div:last-of-type {
+  margin-left: 2.5%;
+}
+
+#sentinel p:first-of-type {
+  position: relative;
+  top: -0.5rem;
+}
+
+#sentinel-repo-btn-1 {
   margin-top: 25px;
-  width: 365px;
-  font-size: 1.75rem;
+  width: 228px;
+  margin-bottom: 15px;
 }
 
-#sentinel p {
-  font-size: 1.25rem;
-}
-
-#sentinel p > a {
-  color: #33c5ff;
-  text-decoration: underline;
+#sentinel-repo-btn-2 {
+  margin-top: -20px;
+  width: 228px;
+  margin-bottom: 15px;
+  display: none;
 }
 
 #sentinel span {
   color: #E07F00;
 }
 
-/* ---------------------------------
-
-              projects
-
------------------------------------- */
-
-
-#projects h1 {
-  text-align: center;
-}
-#projects > ul {
-  display: flex;
-  margin-top: 75px;
-  flex-wrap: wrap;
-}
-
-#projects li {
-  flex:1 0 45%;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-#projects img {
-  box-shadow: 0 0 25px #d2d7d3;
-  border-radius: 5px;
-}
-
-#projects img, #projects p, #projects h4 {
-  max-width: 400px;
-  text-align: center;
-  margin: auto;
-}
-
-#projects h4 {
-  margin-top: 10px;
-}
 
 /* ---------------------------------
 
@@ -400,15 +400,30 @@ footer {
 
 ------------------------------------ */
 
-@media(max-width: 1142px) {
-  #intro {
-    display: flex;
-    flex-direction: column;
+@media(max-width: 1100px) {
+  h4 {
+    font-size: 1.1rem;
   }
 
-  #sentinel div {
+  #logo {
+    margin: 20px;
+    width: 55px;
+  }
+
+  #projects p {
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+  }
+}
+
+
+@media(max-width: 920px) {
+  #intro-wide {
+    display: none;
+  }
+
+  #intro-narrow {
     display: flex;
-    flex-direction: column;
   }
 
   section {
@@ -434,12 +449,34 @@ footer {
     align-items: center;
     flex-direction: column;
     width: 75%;
-    margin: auto;
-    margin-top: 40px;
   }
 
-  #projects li {
-    margin-bottom: 40px;
+  #logo {
+    width: 50px;
+  }
+
+  #sentinel-info-container {
+    -ms-align-items: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  #sentinel-info-container > div:first-of-type {
+    margin-right: 0;
+  }
+
+  #sentinel-info-container > div:last-of-type {
+    margin-left: 0;
+  }
+
+  #sentinel-info-container > div {
+    width: 90%;
+  }
+
+  #sentinel-info-img,
+  div > iframe {
+    margin-bottom: 50px;
   }
 
   #contact ul {
@@ -450,23 +487,112 @@ footer {
     margin: 8%;
   }
 
-  #sentinel p {
+  #sentinel-info-img-1 {
+    /* background-color: #282828;
+    border: solid 10px #282828;
+    border-radius: 10px; */
+    height: auto;
+    max-width: 150px;
+  }
+
+  #canary-container {
     text-align: center;
+    margin-top: 10px;
   }
 
-  #sentinel a {
-    margin: auto;
+  #sentinel-repo-btn-1 {
+    display: none;
+  }
+  
+  #sentinel-repo-btn-2 {
+    display: inline;
+  }
+}
+
+@media(max-width: 570px) {
+  #intro-narrow > p {
+    width: 100%;
   }
 
+  h1 {
+    font-size: 2.7rem;
+    width: 80vw;
+  }
+
+  h2 {
+    font-size: 1.9rem;
+  }
+
+  section {
+    padding: 65px 15%;
+  }
+
+  #sentinel-info-container {
+    margin-top: 25px;
+  }
+
+  #sentinel-repo-btn-1 {
+    align-self: center;
+  }
+
+  #sentinel-repo-btn-2 {
+    align-self: center;
+  }
+
+  #projects > ul {
+    width: 100%;
+  }
+}
+
+@media(max-width: 465px) {
+  #sentinel-info-container > div {
+    width: 100%;
+  }
+
+  #contact li {
+    margin: 15%;
+  }
+
+  #projects > ul {
+    width: 100%;
+  }
 }
 
 
-@media(max-width: 690px) {
-  #intro {
-    float: left;
+@media(max-width: 400px) {
+  html {
+    font-size: 16px;
   }
 
-  #projects {
-    float: left;
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  #sentinel-repo-btn-1 {
+    width: 180px;
+  }
+
+  #sentinel-repo-btn-2 {
+    width: 180px;
+  }
+
+  #projects > ul {
+    margin-top: 50px;
+  }
+
+  #projects li {
+    margin-bottom: 50px;
+  }
+
+  #projects li:last-of-type {
+    margin-bottom: 0;
   }
 }
