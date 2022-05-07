@@ -199,7 +199,6 @@ footer {
   align-items: center;
   flex-direction: row;
   justify-content: center;
-  /* gap: 10px; */
 }
 
 #logo {
@@ -252,8 +251,6 @@ footer {
 
 #sentinel {
   background-color: #ecf0f1;
-  /* display: grid; */
-  /* grid-template-rows: 1fr 1fr 1fr; */
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -262,9 +259,6 @@ footer {
 }
 
 #sentinel > div {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr;
-  max-height: fit-content; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -301,7 +295,6 @@ footer {
 #sentinel-repo-btn {
   margin-top: 25px;
   width: 365px;
-  /* position: absolute; */
   font-size: 1.75rem;
 }
 
@@ -329,8 +322,6 @@ footer {
   text-align: center;
 }
 #projects > ul {
-  /* -ms-align-items: flex-start;
-  align-items: flex-start; */
   display: flex;
   margin-top: 75px;
   flex-wrap: wrap;
@@ -344,12 +335,10 @@ footer {
 
 #projects img {
   box-shadow: 0 0 25px #d2d7d3;
-  /* width: 75%; */
-  /* max-width: 1000px; */
+  border-radius: 5px;
 }
 
 #projects img, #projects p, #projects h4 {
-  /* width: 75%; */
   max-width: 400px;
   text-align: center;
   margin: auto;
@@ -411,24 +400,7 @@ footer {
 
 ------------------------------------ */
 
-/* @media(max-width: 1100px) {
-  h4 {
-    font-size: 1.1rem;
-  }
-
-  #logo {
-    margin: 20px;
-    width: 55px;
-  }
-
-  #projects p {
-    font-size: 0.85rem;
-    line-height: 1.5rem;
-  }
-} */
-
-
-@media(max-width: 1115px) {
+@media(max-width: 1142px) {
   #intro {
     display: flex;
     flex-direction: column;
@@ -462,16 +434,13 @@ footer {
     align-items: center;
     flex-direction: column;
     width: 75%;
+    margin: auto;
+    margin-top: 40px;
   }
 
-  /* #logo {
-    width: 50px;
-  } */
-
-  /* #deploy-command-gif,
-  div > iframe {
-    margin-bottom: 50px;
-  } */
+  #projects li {
+    margin-bottom: 40px;
+  }
 
   #contact ul {
     width: 30%;
@@ -479,11 +448,6 @@ footer {
 
   #contact li {
     margin: 8%;
-  }
-
-  #projects ul {
-    margin: auto;
-    margin-top: 15px;
   }
 
   #sentinel p {
@@ -506,69 +470,3 @@ footer {
     float: left;
   }
 }
-
-/* 
-@media(max-width: 570px) {
-  #intro > p {
-    width: 100%;
-  }
-
-  h1 {
-    font-size: 2.7rem;
-    width: 80vw;
-  }
-
-  h2 {
-    font-size: 1.9rem;
-  }
-
-  section {
-    padding: 65px 15%;
-  }
-
-  #projects > ul {
-    width: 100%;
-  }
-}
-
-@media(max-width: 465px) {
-
-  #contact li {
-    margin: 15%;
-  }
-
-  #projects > ul {
-    width: 100%;
-  }
-}
-
-
-@media(max-width: 400px) {
-  html {
-    font-size: 16px;
-  }
-
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  h2 {
-    font-size: 1.7rem;
-  }
-
-  h3 {
-    font-size: 1.2rem;
-  }
-
-  #projects > ul {
-    margin-top: 50px;
-  }
-
-  #projects li {
-    margin-bottom: 50px;
-  }
-
-  #projects li:last-of-type {
-    margin-bottom: 0;
-  }
-} */
